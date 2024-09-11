@@ -1,6 +1,6 @@
 ## Codigo
 
-```vuejs
+```js
 <template>
   <div id="app">
     <q-btn
