@@ -75,3 +75,14 @@ export default {
 </style>
 
 ```
+
+Explicación:
+
+Variables reactivas: Usamos ref para definir las variables initialY, offsetY, y isDragging.
+Métodos:
+  startDrag inicia el arrastre y agrega los listeners de mousemove y mouseup.
+  onDrag actualiza la posición vertical del botón durante el arrastre.
+  stopDrag detiene el arrastre y remueve los eventos.
+Ciclo de vida:
+  onMounted: Se ejecuta cuando el componente está montado, y usamos querySelector para obtener una referencia al botón.
+  onBeforeUnmount: Se asegura de que los eventos se eliminen al desmontar el componente.
